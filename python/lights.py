@@ -13,7 +13,7 @@ LED_COUNT      = 300     # Number of LED pixels.
 LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
 LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
 LED_DMA        = 5       # DMA channel to use for generating signal (try 5)
-LED_BRIGHTNESS = 16      # Set to 0 for darkest and 255 for brightest
+LED_BRIGHTNESS = 32      # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 
 
@@ -28,7 +28,7 @@ def rainbowCycle(strip, wait_ms=20, iterations=5):
 def solidColour(strip, colour):
 	for i in range(0, strip.numPixels(), 2):
 		strip.setPixelColor(i, colour)
-	strip.show()
+		strip.show()
 
 
 # Main program logic follows:
