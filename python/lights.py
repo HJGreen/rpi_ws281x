@@ -26,7 +26,7 @@ def rainbowCycle(strip, wait_ms=20, iterations=5):
 		time.sleep(wait_ms/1000.0)
 
 def solidColour(strip, colour):
-	for i in range(strip.numPixels()):
+	for i in range(0, strip.numPixels(), 2):
 		strip.setPixelColor(i, colour)
 	strip.show()
 
