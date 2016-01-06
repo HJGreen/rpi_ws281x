@@ -40,5 +40,5 @@ if __name__ == '__main__':
 
 	print 'Press Ctrl-C to quit.'
 	while True:
-		solidColour(Color(98, 139, 50))
+		solidColour(strip, Color(98, 139, 50))
 		# rainbowCycle(strip)
